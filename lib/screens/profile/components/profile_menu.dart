@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../../constants.dart';
-
 class ProfileMenu extends StatelessWidget {
   const ProfileMenu({
     Key key,
@@ -32,7 +30,7 @@ class ProfileMenu extends StatelessWidget {
             ),
             SizedBox(width: 20),
             Expanded(child: Text(text)),
-            Icon(Icons.arrow_forward_ios),
+            Icon(Icons.arrow_forward_ios_rounded),
           ],
         ),
       ),

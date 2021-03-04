@@ -1,5 +1,5 @@
-import 'package:e_store/screens/cart/cart.dart';
-import 'package:e_store/screens/favorite/favorite.dart';
+import 'package:e_store/screens/cart/cart_sreen.dart';
+import 'package:e_store/screens/favorite/favorite_screen.dart';
 import 'package:e_store/screens/home/home_screen.dart';
 import 'package:e_store/screens/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
@@ -13,8 +13,8 @@ class _NavState extends State<Nav> {
   int _selectedIndex = 0;
   List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
-    Favorite(),
-    Cart(),
+    FavoriteScreen(),
+    CartScreen(),
     ProfileScreen(),
   ];
 

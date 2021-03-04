@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class HomeScreen extends StatelessWidget {
+  static String routeName = "/home";
 
   @override
   Widget build(BuildContext context) {
@@ -20,8 +21,8 @@ class HomeScreen extends StatelessWidget {
       actions: <Widget>[
         Column(
           crossAxisAlignment: CrossAxisAlignment.start, //TODO:
-          //mainAxisAlignment: MainAxisAlignment.start,
-          children: <Widget> [
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
             Container(
               width: 230,
               decoration: BoxDecoration(
@@ -31,9 +32,8 @@ class HomeScreen extends StatelessWidget {
               child: TextField(
                 onChanged: (value) => print(value),
                 decoration: InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(
-                        horizontal: 2,
-                        vertical: 18),
+                    contentPadding:
+                        EdgeInsets.symmetric(horizontal: 2, vertical: 18),
                     border: InputBorder.none,
                     focusedBorder: InputBorder.none,
                     enabledBorder: InputBorder.none,
@@ -43,7 +43,7 @@ class HomeScreen extends StatelessWidget {
             ),
           ],
         ),
-        // IconButton(
+        // IconButton( //TODO: delete!
         //   icon: SvgPicture.asset(
         //       "assets/icons/search.svg",
         //       color: kTextColor
@@ -51,18 +51,12 @@ class HomeScreen extends StatelessWidget {
         //   onPressed: () {},
         // ),
         IconButton(
-          icon: SvgPicture.asset(
-              "assets/icons/cart.svg",
-              color: kTextColor
-          ),
-          onPressed: () {
-            //TODO:
-            // Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) {
-            //       return Cart();
-            //     }));
-          }
+            icon: SvgPicture.asset("assets/icons/cart.svg", color: kTextColor),
+            onPressed: () {} // TODO: onPressed: () => Navigator.pushNamed(context, Cart.routeName),
+            ),
+        SizedBox(
+          width: kDefaultPadding / 2,
         ),
-        SizedBox(width: kDefaultPadding / 2,),
       ],
     );
   }

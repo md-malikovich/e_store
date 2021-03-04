@@ -1,7 +1,3 @@
-import 'package:e_store/screens/dresses/dresses.dart';
-import 'package:e_store/screens/footwear/footwear.dart';
-import 'package:e_store/screens/home/home_screen.dart';
-import 'package:e_store/screens/jewellery/jewellery.dart';
 import 'package:flutter/material.dart';
 import '../constants.dart';
 
@@ -12,7 +8,7 @@ class Categories extends StatefulWidget {
 
 class _CategoriesState extends State<Categories> {
   List<String> categories = ["Бургеры", "Баскеты", "Курица", "Комбо"];
-  //List<Widget> categories = [HomeScreen(), Jewellery(), Footwear(), Dresses()];
+  //List<Widget> categories = [HomeScreen(), Jewellery(), Footwear(), Dresses()]; TODO:
   int selectedIndex = 0;
 
   @override

@@ -1,7 +1,6 @@
 import 'package:e_store/constants.dart';
 import 'package:e_store/models/Product.dart';
 import 'package:e_store/screens/details/details_screen.dart';
-import 'package:e_store/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'categories.dart';
 import 'item_card.dart';
@@ -21,7 +20,7 @@ class Body extends StatelessWidget {
                   .headline5
                   .copyWith(fontWeight: FontWeight.bold)),
         ),
-        Categories(), //todo: TAB BAR
+        Categories(), //TODO: TAB BAR
         Expanded(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
@@ -41,7 +40,9 @@ class Body extends StatelessWidget {
                           builder: (context) => DetailsScreen(
                             product: products[index],
                           )
-                        )),),
+                        )
+                    ),
+                  ),
             ),
           ),
         ),

@@ -31,7 +31,7 @@ List<Product> products = [
       size: 12,
       description: dummyText,
       image: "assets/images/burger_2.png",
-      color: Color(0xFFD3A984)),
+      color: Color(0xFF989493)),
   Product(
       id: 3,
       title: "Шефбургер",
@@ -47,7 +47,7 @@ List<Product> products = [
       size: 12,
       description: dummyText,
       image: "assets/images/burger_4.png",
-      color: Color(0xFFE6B398)),
+      color: Color(0xFFFB7883)),
   Product(
       id: 5,
       title: "Шеф Тауэр Острый",

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'profile_menu.dart';
 import 'profile_pic.dart';
 
@@ -13,29 +12,39 @@ class Body extends StatelessWidget {
           ProfilePic(),
           SizedBox(height: 20),
           ProfileMenu(
-            text: "My Account",
-            icon: "assets/icons/User Icon.svg",
-            press: () => {},
+            text: "История заказов",
+            icon: "assets/icons/history.svg",
+            press: () => {
+              //TODO:
+            },
           ),
           ProfileMenu(
-            text: "Notifications",
+            text: "Уведомления",
             icon: "assets/icons/Bell.svg",
-            press: () {},
+            press: () {
+              //TODO:
+            },
           ),
           ProfileMenu(
-            text: "Settings",
+            text: "Настройки",
             icon: "assets/icons/Settings.svg",
-            press: () {},
+            press: () {
+              //TODO:
+            },
           ),
           ProfileMenu(
-            text: "Help Center",
-            icon: "assets/icons/Question mark.svg",
-            press: () {},
+            text: "Свяжитесь с нами",
+            icon: "assets/icons/question.svg",
+            press: () {
+              //TODO:
+            },
           ),
           ProfileMenu(
-            text: "Log Out",
-            icon: "assets/icons/Log out.svg",
-            press: () {},
+            text: "Поделиться приложением",
+            icon: "assets/icons/share.svg",
+            press: () {
+              //TODO:
+            },
           ),
         ],
       ),
